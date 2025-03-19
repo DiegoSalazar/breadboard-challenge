@@ -10,7 +10,7 @@ Breadboard code challenge submission. This Typescript/NestJS based backend imple
 ## Project setup
 
 ```bash
-git clone
+git clone https://github.com/DiegoSalazar/breadboard-challenge.git
 npm install
 npm run start
 ```
@@ -20,6 +20,9 @@ npm run start
 ```bash
 # example successful request returns AggregratedParts of the given part number
 curl 'http://localhost:3000/parts/aggregate?partNumber=0510210200'
+
+# or for prettier out if you have jq installed
+curl 'http://localhost:3000/parts/aggregate?partNumber=0510210200' | jq
 
 # example request that returns "none found"
 curl 'http://localhost:3000/parts/aggregate?partNumber=123'
