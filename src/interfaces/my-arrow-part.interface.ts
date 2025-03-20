@@ -12,7 +12,7 @@ export type MyArrowProduct = {
   itemId: number;
   warehouseId: string;
   warehouseCode: string;
-  arrowReel: false;
+  arrowReel: number;
   responseState: string;
   currency: string;
   documentId: string;
