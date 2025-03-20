@@ -22,7 +22,7 @@ describe('PartsService', () => {
 
   it('returns parts of given part number', async () => {
     const partNumber = '0510210200';
-    const parts = await service.fetchAndAggregate(partNumber); // Assuming `fetchPartData` is a method in `PartsService`
+    const parts = await service.fetchAndAggregate(partNumber);
     expect(parts).toMatchSnapshot();
   });
 });

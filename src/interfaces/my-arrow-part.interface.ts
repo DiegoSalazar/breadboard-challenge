@@ -22,8 +22,8 @@ export type MyArrowProduct = {
   partNumber: string;
   tariffValue: string;
   tariffApplicable: string;
-  minOrderQuantity: 1;
-  multOrderQuantity: 1;
+  minOrderQuantity: number;
+  multOrderQuantity: number;
   manufacturer: string;
   mfrCode: string;
   supplier: string;
