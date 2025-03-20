@@ -5,6 +5,7 @@ Breadboard code challenge submission. This Typescript/NestJS based backend imple
 - Splits up the fetching and transformation of parts data from disparate suppliers into `service` objects, providing a future proof pattern for scaling up to N services.
 - Uses `Promise.allSettled` to ignore failed service calls while still returning data from other services.
 - Authentication and config can be specified for each `service` by injecting a different `HttpService` wrapper with the proper config.
+- Parts data from all suppliers is aggregated into a single `AggregatedPart` object by the `PartsService`.
 - Functionality is proven via the unit and e2e tests and the provided `curl` commands below.
 
 ## Project setup
